@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krusty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cards-container">
+      <% employees.forEach(employee => { %>
+          <div class="card">
+              <h2 class="employee-name"><%= employee.name %></h2>
+              <div class="recipe-details">
+                <p>Recipe : <%= employee.recipeID.name %></p>
+                <p>Price : <%= employee.recipeID.price %> €</p>
+            </div>
+          </div>
+      <% }) %>
+  </div>
+</body>
+</html>
